@@ -107,11 +107,11 @@ def create_feature_analysis():
     # Save
     os.makedirs('plots', exist_ok=True)
     plt.savefig('plots/feature_analysis.png', dpi=300, bbox_inches='tight')
-    print("✅ Feature analysis saved to plots/feature_analysis.png")
+    print(" Feature analysis saved to plots/feature_analysis.png")
     plt.show()
     
     # Print insights
-    print("\n🔍 Feature Analysis Insights:")
+    print("\n Feature Analysis Insights:")
     print("=" * 50)
     
     for feature in features:

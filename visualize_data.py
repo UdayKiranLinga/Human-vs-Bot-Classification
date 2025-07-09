@@ -156,7 +156,7 @@ def plot_movement_patterns(sessions_file='data/all_sessions.json', save_path='pl
     plt.subplots_adjust(top=0.92, left=0.08)
     os.makedirs('plots', exist_ok=True)
     plt.savefig(save_path, dpi=300, bbox_inches='tight')
-    print(f"✅ Movement patterns saved to {save_path}")
+    print(f"Movement patterns saved to {save_path}")
     plt.show()
 
 def plot_session_duration_analysis(sessions_file='data/all_sessions.json', save_path='plots/session_duration_analysis.png'):
@@ -204,7 +204,7 @@ def plot_session_duration_analysis(sessions_file='data/all_sessions.json', save_
 def create_essential_visualizations():
     """Create essential visualizations for the project."""
     try:
-        print(" Creating essential visualizations...")
+        print("Creating essential visualizations...")
         
         # 1. Movement patterns
         print("1. Creating movement patterns comparison...")
@@ -219,7 +219,7 @@ def create_essential_visualizations():
     except FileNotFoundError as e:
         print(f"Error creating visualizations: {e}")
     except ImportError as e:
-        print(f" Missing required library: {e}")
+        print(f"Missing required library: {e}")
 
 if __name__ == "__main__":
     create_essential_visualizations()
